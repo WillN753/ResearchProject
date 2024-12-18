@@ -13,9 +13,9 @@
         <!-- JAVASCRIPT -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body id="here">
         <!-- NAVIGATION -->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="nav"> 
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Research Project</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,34 +24,57 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">About</a>
+                            <a class="nav-link" aria-current="page" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Featured Pests</a>
+                            <a class="nav-link" href="#featured pests">Featured Pests</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Research</a>
+                            <a class="nav-link" href="#research">Research</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- HERO SECTION -->
-        <div class="hero-section py-5">
+          <div class="hero-section py-5">
             <main class="container py-5">
               <div class="p-5 rounded">
-                <h1>Welcome!</h1>
+                <h1 class="header-title">Welcome!</h1>
                 <p class="lead">
                     Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
                 </p>
-                <a class="btn btn-lg btn-dark" href="#" role="button"
-                  >Learn More &raquo;</a
-                >
+                <a class="btn btn-lg btn-dark" href="#" role="button">Learn More &raquo;</a>
               </div>
             </main>
           </div>
+          <div class="wrapper bg-dark">
+            <div class="bg-dark text-white container py-5" id="about">
+              <div class="row">
+                  <h1 class="text-center pb-1 fw-bold" id="about">About</h1>
+                  <p>
+                    Praesent fringilla lacus eget eros bibendum molestie. Nulla sit amet
+                    mauris sed augue tincidunt suscipit. Donec bibendum egestas egestas.
+                    Maecenas eu urna nisi. In at lectus sollicitudin, ornare quam tempor,
+                    dignissim justo. Sed aliquam luctus leo ultricies finibus. Morbi
+                    lacinia justo vel eleifend feugiat.
+                  </p>
+          
+                  <p>
+                    In egestas pharetra convallis. Integer nec ullamcorper mi. Nunc
+                    ullamcorper fermentum leo, accumsan ullamcorper felis faucibus
+                    fermentum. Duis blandit in nibh sed tincidunt. Sed augue risus,
+                    sollicitudin sollicitudin eleifend posuere, congue mattis eros. Proin
+                    mollis est dolor, sed pulvinar enim facilisis eget. Sed ut vulputate
+                    ex. Ut ultrices eleifend orci, quis venenatis justo tempor nec.
+                    Suspendisse consectetur fringilla ex, eu porta tellus mollis sed. Sed
+                    a congue urna. Mauris eget lacus quam.
+                  </p>
+              </div>
+            </div>
+          </div>
         <!-- CAROUSEL SECTION -->
-        <div class="bg-aquamarine py-5" id="About">
+        <div class="bg-light py-5" id="featured pests">
             <div class="container py-5">
                 <div class="row">
                 <div class="col-sm-8">
@@ -87,7 +110,7 @@
               </div>
             </div>
           </div>
-          <div class="bg-dark text-white py-5 presentation" id="slides">
+          <div class="bg-dark text-white py-5 presentation" id="research">
             <div class="container">
               <div class="row">
                 <div class="col-md py-5">
@@ -107,14 +130,59 @@
                   </button>
                 </div>
                 <div class="col-md-8 py-5">
-                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQenywRoM6_9PyrgVZ2YPSLgJe1MjioV3rJkxFR5yeuGu1__DHXvLu-2Cc8Te_rJ8u62YRBb-K8P_PL/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="576" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTmpXNRDvFMREYB9pGV81sxcnETJSrY56L77ZC8KnM7mfCwt8zryLMGB97AI5AigYkuEdsghPORRckR/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </div>
               </div>
             </div>
           </div>
         <!-- CUSTOM FONT -->
         <link rel="preload" href="fonts/Macfadden-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    </body>
     <footer>
+      <div class="bg-dark text-white py-5 footer">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-sm-3 pb-5">
+                <h5>Heading 1</h3>
+                <ul class="text-white-50">
+                    <li>Lorem ipsum dalor</li>
+                    <li>Site amet</li>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 pb-5">
+                <h5>Heading 2</h3>
+                    <ul class="text-white-50">
+                        <li>Lorem ipsum dalor</li>
+                        <li>Site amet</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+            </div>
+            <div class="col-sm-3 pb-5">
+                <h5>Heading 3</h3>
+                    <ul class="text-white-50">
+                        <li>Lorem ipsum dalor</li>
+                        <li>Site amet</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+            </div>
+            <div class="col-sm-3 pb-5">
+                <h5>Heading 4</h3>
+                    <ul class="text-white-50">
+                        <li>Lorem ipsum dalor</li>
+                        <li>Site amet</li>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+      <a href="#here" class="to-top">
+        <i class="bi bi-arrow-up-circle-fill text-black"></i>
+      </a>
+    </body>
 </html>
