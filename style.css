@@ -36,3 +36,15 @@
     max-width: 856px;
     height: 518px;
 }
+
+body{
+    font-family:"Dosis", Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 40px;
+}
